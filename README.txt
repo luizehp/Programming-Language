@@ -1,3 +1,6 @@
+Linguagem para modelar e controlar circuitos eletrônicos
+
+
 <program>       ::= { <statement> }
 
 <statement>     ::= <declaration>
