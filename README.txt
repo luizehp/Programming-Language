@@ -1,6 +1,6 @@
-bash ´´´
 
 Linguagem para modelar e controlar circuitos eletrônicos
+bash ´´´
 
 
 <program>       ::= { <statement> }
