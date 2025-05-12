@@ -20,13 +20,13 @@ bash ´´´
 <assignment>    ::= <identifier> "=" <expression>
                   | <identifier> "." <property> "=" <expression>
 
-<property>      ::= "tensão"
+<property>      ::= "tensao"
                   | "corrente"
                   | "resistência"
 
-<conditional>   ::= "se" <expression> <relop> <expression> "então"
+<conditional>   ::= "se" <expression> <relop> <expression> "entao"
                       <block>
-                   [ "senão" <block> ]
+                   [ "senao" <block> ]
                    "fim"
 
 <relop>         ::= ">" | "<" | ">=" | "<=" | "==" | "!="

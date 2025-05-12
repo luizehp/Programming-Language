@@ -1,0 +1,23 @@
+resistor R1 = 100Ω
+capacitor C1 = 0.5F
+indutor L1 = 2H
+
+R1.tensao = 12V
+C1.corrente = 0.3A
+
+se R1.tensao > 10V entao
+    L1.tensao = (R1.tensao / 2) + 5V
+senao
+    C1.corrente = 0.1A
+fim
+
+loop 5 ciclos_clock
+    R1.tensao = R1.tensao - 1V
+fim
+
+enquanto C1.corrente < 0.5A
+    C1.corrente = C1.corrente + 0.1A
+    calcular(R1.tensao, C1.corrente * 2)
+fim
+
+calcular(L1.tensao, (12V + 3V) * 2)
