@@ -1,3 +1,5 @@
+bash ´´´
+
 Linguagem para modelar e controlar circuitos eletrônicos
 
 
@@ -57,3 +59,8 @@ Linguagem para modelar e controlar circuitos eletrônicos
 
 <letter>        ::= "a" | … | "z" | "A" | … | "Z"
 <digit>         ::= "0" | … | "9"
+´´´
+flex lexer.l
+bison -d parser.y
+gcc lex.yy.c parser.tab.c -o circuitflow
+./circuitflow < seu_programa.cf
