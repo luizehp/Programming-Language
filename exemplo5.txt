@@ -1,0 +1,5 @@
+resistor R4 = 10Ω
+capacitor C2 = 0.02F
+
+# tentativa inválida de somar Ω + F
+R4.resistência = R4.valor + C2.valor

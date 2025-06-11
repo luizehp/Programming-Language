@@ -1,0 +1,7 @@
+resistor R1 = 100Ω
+capacitor C1 = 0.01F
+
+# soma de mesmo tipo: Ω + Ω (valor de C1 tratado como Ω para teste)
+C1.valor       = 10Ω
+R1.resistência = R1.valor + C1.valor
+R1.tensao      = R1.resistência * 0.1V

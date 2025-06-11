@@ -1,0 +1,7 @@
+resistor R1 = 100Ω
+capacitor C1 = 0.01F
+indutor L1 = 0.5H
+
+R1.tensao     = 12V
+C1.corrente   = 0.02A
+L1.resistência = 200Ω

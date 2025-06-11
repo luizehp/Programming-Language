@@ -1,0 +1,8 @@
+resistor R2 = 50Ω
+R2.tensao = 5V
+
+se R2.tensao > 3V entao
+  R2.corrente = R2.tensao / R2.valor
+senao
+  R2.corrente = 0.0A
+fim

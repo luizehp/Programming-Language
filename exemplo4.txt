@@ -1,0 +1,6 @@
+resistor R3 = 10Ω
+R3.tensao = 0V
+
+loop 5 ciclos_clock
+  R3.tensao = R3.tensao + 1V
+fim
