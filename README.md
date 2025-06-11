@@ -1,7 +1,7 @@
 
-Linguagem para modelar e controlar circuitos eletrônicos
-bash ´´´
-
+# Linguagem para modelar e controlar circuitos eletrônicos:
+## EBNF:
+``` bash 
 
 <program>       ::= { <statement> }
 
@@ -59,8 +59,8 @@ bash ´´´
 
 <letter>        ::= "a" | … | "z" | "A" | … | "Z"
 <digit>         ::= "0" | … | "9"
-´´´
-flex lexer.l
-bison -d parser.y
-gcc lex.yy.c parser.tab.c -o circuitflow
-./circuitflow < seu_programa.cf
+```
+## Para rodar:
+``` bash 
+python main.py exemplo.txt
+```
